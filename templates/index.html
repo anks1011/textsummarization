@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="/static/styles.css">
+     <link rel="shortcut icon"
+          href="https://cdn.activestate.com/wp-content/uploads/2021/12/python-text-summarization.jpg"
+          type="image/x-icon">
+     <title>Text Summarization</title>
+</head>
+
+
+<body>
+     <!-- navebar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <div class="container-fluid">
+               <a class="navbar-brand " href="#">Text Summarization</a>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                         </li>
+
+                    </ul>
+
+                    <span class="navbar-text">
+                         Mentor : Dr Alok Kumar
+                    </span>
+               </div>
+          </div>
+     </nav>
+     <div class="container-fluid">
+          <h1 class="page-header"> Text Summarization</h1>
+     </div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col" row=10>
+                    <div class="container border border-primary" style="background-color: rgb(191, 238, 238);">
+                         <br>
+
+                         <h2 style="text-align: center; 
+     text-decoration: underline;">About</h2>
+
+                         <p>Text summarization refers to the technique of <b>shortening long pieces of text</b>. The
+                              intention
+                              is to create a coherent and
+                              fluent summary having only the main points outlined in the document. Automatic text
+                              summarization is a common problem in
+                              machine learning and natural language processing (NLP). Skyhoshi, who is a U.S.-based
+                              machine learning expert with 13
+                              years of experience and currently teaches people his skills, says that “the technique has
+                              proved to be critical in
+                              quickly and accurately summarizing voluminous texts, something which could be expensive
+                              and time consuming if done
+                              without machines.” Machine learning models are usually trained to understand documents and
+                              distill the useful
+                              information before outputting the required summarized texts.</p>
+                         <h4>Types :</h4>
+                         <ul>
+                              <li>
+                                   <p><b>Extraction-based summarization: </b>The extractive text summarization technique
+                                        involves pulling
+                                        keyphrases from the source
+                                        document and combining them to
+                                        make a summary. The extraction is made according to the defined metric without
+                                        making any
+                                        changes to the texts.</p>
+                              </li>
+                              <li>
+                                   <p><b>Abstraction-based summarization:</b> The abstraction technique entails
+                                        paraphrasing and
+                                        shortening parts of the source document.
+                                        When abstraction is applied
+                                        for text summarization in deep learning problems, it can overcome the grammar
+                                        inconsistencies of the extractive method.
+                                   </p>
+                              </li>
+                         </ul>
+
+                    </div>
+               </div>
+
+               <div class="col">
+                    <div class="container">
+                         <div class="summ">
+                              <h1 class="head1">Text TF_IDF METHOD</h1>
+                              <form action="/analyze" method='POST'>
+                                   <textarea name="rawtext" class="form-control" ,rows=20
+                                        placeholder="Enter Your raw Text"></textarea>
+                                   <br>
+                                    <button type="submit" class="btn btn-primary">Using TF-IDF</button>
+                              </form>
+                         </div>
+
+
+                    </div>
+               </div>
+          </div>
+     </div>
+     <br>
+     <hr>
+     <br>
+<div class="container">
+          <div class="row">
+
+               <div class="col" row=10>
+                    <div class="container">
+                         <div class="summ">
+                              <h1 class="head1">Text K-mean Cluster</h1>
+                              <form action="/analyze1" method='POST'>
+                                   <textarea name="rawtext" class="form-control" ,rows=20
+                                        placeholder="Enter Your raw Text"></textarea>
+                                   <br>
+
+                                   <button type="submit" class="btn btn-primary">Using K-mean Cluster</button>
+                              </form>
+                         </div>
+
+
+                    </div>
+
+
+               </div>
+
+               <div class="col">
+                    <div class="container">
+                         <div class="summ">
+                              <h1 class="head1">Text graph based</h1>
+                              <form action="/analyze" method='POST'>
+                                   <textarea name="rawtext" class="form-control" ,rows=20
+                                        placeholder="Enter Your raw Text"></textarea>
+                                   <br>
+
+
+                                   <button type="submit" class="btn btn-primary">Using graph based</button>
+                              </form>
+                         </div>
+
+
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <br>
+     <br>
+     <hr>
+     <br>
+
+<div class="container">
+          <div class="row">
+
+               <div class="col" row=10>
+                    <div class="container">
+                         <div class="summ">
+                              <h1 class="head1">Text Machine Learning</h1>
+                              <form action="/analyze" method='POST'>
+                                   <textarea name="rawtext" class="form-control" ,rows=20
+                                        placeholder="Enter Your raw Text"></textarea>
+                                   <br>
+
+                                   <button type="submit" class="btn btn-primary">Using Machine Learning</button>
+                              </form>
+                         </div>
+
+
+                    </div>
+
+
+               </div>
+
+               <div class="col">
+                    <div class="container">
+                         <div class="summ">
+                              <h1 class="head1">Text Deep Learning</h1>
+                              <form action="/analyze1" method='POST'>
+                                   <textarea name="rawtext" class="form-control" ,rows=20
+                                        placeholder="Enter Your raw Text"></textarea>
+                                   <br>
+
+
+                                   <button type="submit" class="btn btn-primary">Using Deep Learning</button>
+                              </form>
+                         </div>
+
+
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <br>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+          crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+          integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+          crossorigin="anonymous"></script>
+</body>
+<footer class="bg-light text-center text-lg-start">
+     <!-- Copyright -->
+     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+          Made By:
+          <a class="text-dark" href="https://mdbootstrap.com/">Ankit Singh(010) & Dev Pratap Singh(017)</a>
+     </div>
+     <!-- Copyright -->
+</footer>
+
+</html>
